@@ -37,18 +37,18 @@
     .menu {
         max-width: none;
     }
-        .menu__header {
-             
-            justify-content: space-around;
-            margin: 0 150px 0 150px;
-             
-        }
+
+    .menu__header {
+
+        justify-content: space-around;
+        margin: 0 150px 0 150px;
+
+    }
 
     .menu__content {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
-
 .menu-group__list {
     display: flex;
     flex-direction: column;
