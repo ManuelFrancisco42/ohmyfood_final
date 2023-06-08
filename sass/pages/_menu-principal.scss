@@ -5,11 +5,12 @@
 .menu {
     padding-inline: calc((100vw - min(90vw, 75rem))/2);
     position: relative;
-    margin-top: -1.5rem;
+    margin: -1.5rem 192px 0 192px;
+    padding: 0 210px 0 210px;
     padding-block: 2rem;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
-    background-color: #f7f7f7;
+    background-color: #f6f6f6;
 }
 
 .menu__header {
@@ -34,9 +35,14 @@
 
 @media (min-width: 1024px) {
     .menu {
-        width: 100%;
         max-width: none;
     }
+        .menu__header {
+             
+            justify-content: space-around;
+            margin: 0 150px 0 150px;
+             
+        }
 
     .menu__content {
         grid-template-columns: repeat(1, minmax(0, 1fr));
