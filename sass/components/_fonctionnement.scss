@@ -1,0 +1,66 @@
+/*_________________________________________________________________________*/
+/****** Fonctionnement card ***********/
+/*_________________________________________________________________________*/
+
+//  @use 'sass:math';
+
+ .fonctionnement-card {
+     position: relative;
+     isolation: isolate;
+     display: flex;
+     align-items: center;
+     gap: 1.125rem;
+     margin-left: .875em;
+     padding: 2rem;
+     background-color: #f7f7f7;
+     font-weight: 500;
+     cursor: pointer;
+    // display: block;
+    border-radius: 1.125rem;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.075), 0px 4px 4px rgba(0, 0, 0, 0.075), 0px 8px 8px rgba(0, 0, 0, 0.075);
+     counter-increment: fonctionnement;
+ }
+ .fonctionnement__title {
+     margin-bottom: 2rem;
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+ .fonctionnement-card__icon {
+     color: #7d7d7d;
+     font-size: 1.25rem;
+ }
+
+ .fonctionnement-card::before {
+     content: counter(fonctionnement);
+     position: absolute;
+     top: 50%;
+     left: 0;
+     width: 1.75em;
+     height: 1.75em;
+     border-radius: 50%;
+     background-color: $colors-primary;
+     color: white;
+     text-align: center;
+     line-height: 1.75em;
+     transform: translate(-50%, -50%);
+ }
+
+ .fonctionnement-card::after {
+     content: '';
+     position: absolute;
+     inset: 0;
+     z-index: -1;
+     border-radius: inherit;
+     background-color: #f4ebff;
+     opacity: 0;
+     transition: opacity 0.25s;
+ }
+
+ .fonctionnement-card:hover::after {
+     opacity: 1;
+ }
+
+ .fonctionnement-card:hover .fonctionnement-card__icon {
+     color: $colors-primary;
+ }

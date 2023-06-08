@@ -1,0 +1,25 @@
+//Abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+//Base
+@import "./base/animations";
+@import "./base/reset";
+@import "./base/typography";
+ 
+// Components
+@import './components/card-menu';
+@import './components/card-restaurant';
+@import './components/fonctionnement';
+@import './components/heart-button';
+@import './components/loaderPage';
+@import './components/commander-button';
+
+// Layout
+@import './layout/footer';
+@import './layout/header';
+@import './layout/page-container';
+
+// Pages
+@import './pages/home';
+@import './pages/menu-principal';

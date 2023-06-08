@@ -1,0 +1,49 @@
+
+/*_________________________________________________________________________*/
+/****** Keyframes loader ***********/
+/*_________________________________________________________________________*/
+
+
+@keyframes spinner {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+
+    25% {
+        transform: rotateX(-180deg) rotateY(0);
+    }
+
+    50% {
+        transform: rotateX(-180deg) rotateY(-180deg);
+    }
+
+    75% {
+        transform: rotateX(-360deg) rotateY(-180deg);
+    }
+
+    100% {
+        transform: rotateX(-360deg) rotateY(-360deg);
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+}

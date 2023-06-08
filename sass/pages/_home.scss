@@ -1,0 +1,91 @@
+/*_________________________________________________________________________*/
+/****** Hero page ***********/
+/*_________________________________________________________________________*/
+
+.hero {
+    padding-inline: calc((100vw - min(90vw, 75rem))/2);
+    padding-block: 4rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.hero-image {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+.hero__title {
+    margin-bottom: 1.125rem;
+    font-size: 1.5rem;
+        font-weight: 700;
+}
+/*  .hero__title {
+     margin-bottom: 2rem;
+     
+ } */
+.hero__intro-text {
+    color: #363636;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+
+    .hero__title,
+    .hero__intro-text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*_________________________________________________________________________*/
+/****** Fonctionnement page ***********/
+/*_________________________________________________________________________*/
+
+.fonctionnement {
+    padding-inline: calc((100vw - min(90vw, 75rem))/2);
+    padding-block: 4rem;
+}
+
+.fonctionnement__list {
+    display: grid;
+    gap: 1.5rem;
+    counter-reset: fonctionnement;
+}
+
+/* media querie  */
+@media (min-width: 1024px) {
+    .fonctionnement__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*_________________________________________________________________________*/
+/****** Restaurant page***********/
+/*_________________________________________________________________________*/
+.restaurants {
+    padding-inline: calc((100vw - min(90vw, 75rem))/2);
+    padding-block: 4rem;
+    background-color: #f7f7f7;
+}
+
+.restaurants__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .restaurants__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .restaurants__list {
+        gap: 2rem;
+    }
+
+    .hero-image {
+        height: 16rem;
+    }
+}

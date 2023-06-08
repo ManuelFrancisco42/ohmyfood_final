@@ -1,0 +1,13 @@
+/*_________________________________________________________________________*/
+/****** Typography ***********/
+/*_________________________________________________________________________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+ body {
+     color: #0f0f0f;
+     font-family: $font-family-text;
+     font-size: 1rem;
+     font-weight: 300;
+ }

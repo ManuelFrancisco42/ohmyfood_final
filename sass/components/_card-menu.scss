@@ -1,0 +1,137 @@
+/*_________________________________________________________________________*/
+/****** menu card ***********/
+/*_________________________________________________________________________*/
+
+ .menu-card {
+// display: block;
+     display: flex;
+     overflow: hidden;
+     cursor: pointer;
+    border-radius: 1.125rem;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.075), 0px 4px 4px rgba(0, 0, 0, 0.075), 0px 8px 8px rgba(0, 0, 0, 0.075);
+     animation: slide-in 0.4s cubic-bezier(0.5, 1, 0.89, 1) backwards;
+ }
+
+ .menu__title {
+     font-family: $font-family-logo-titles;
+     font-size: 1.75rem;
+     font-weight: 400;
+ }
+
+ .menu-group__title {
+     position: relative;
+     margin-bottom: 2rem;
+     color: #363636;
+     font-size: 1.125rem;
+     font-weight: 300;
+     text-transform: uppercase;
+ }
+
+ .menu-group__title::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: -0.5rem;
+     width: 2.5em;
+     height: 4px;
+     background-color: $colors-tertiary;
+ }
+
+ .menu-card__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+ }
+ .menu-card__desc {
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ .menu-card--delay-1 {
+     animation-delay: 0.12s;
+ }
+
+ .menu-card--delay-2 {
+     animation-delay: 0.24s;
+ }
+
+ .menu-card--delay-3 {
+     animation-delay: 0.36s;
+ }
+
+ .menu-card--delay-4 {
+     animation-delay: 0.48s;
+ }
+
+ .menu-card--delay-5 {
+     animation-delay: 0.6s;
+ }
+
+ .menu-card--delay-6 {
+     animation-delay: 0.72s;
+ }
+
+ .menu-card--delay-7 {
+     animation-delay: 0.84s;
+ }
+
+ .menu-card--delay-8 {
+     animation-delay: 0.96s;
+ }
+
+ .menu-card--delay-9 {
+     animation-delay: 1.08s;
+ }
+
+ .menu-card__body {
+     flex: 1;
+     min-width: 0;
+     padding: 1.125rem;
+ }
+
+ .menu-card__info {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+ }
+
+ .menu-card__desc {
+     flex: 1;
+     font-size: 0.875rem;
+ }
+
+ .menu-card__price {
+     font-weight: 500;
+ }
+
+ .menu-card__slider {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 4.5rem;
+     margin-right: -4.5rem;
+     background-color: $colors-tertiary;
+     color: white;
+     font-size: 1.5rem;
+     transition: margin 0.3s cubic-bezier(0.11, 0, 0.5, 0);
+ }
+
+ .menu-card__slider-icon {
+     transition: transform 0.2s 0.1s cubic-bezier(0.11, 0, 0.5, 0);
+ }
+
+ .menu-card:hover 
+ .menu-card__slider {
+     margin-right: 0;
+     transition-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+ }
+
+ .menu-card:hover 
+ .menu-card__slider-icon {
+     transform: rotate(360deg);
+     transition-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+ }

@@ -1,0 +1,54 @@
+/*_________________________________________________________________________*/
+/****** Universal Reset ***********/
+/*_________________________________________________________________________*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+:focus-visible {
+    outline: 2px solid get-color(primary, 400);
+    outline-offset: 1px;
+}

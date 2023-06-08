@@ -1,0 +1,27 @@
+/*_________________________________________________________________________*/
+/****** heart button ***********/
+/*_________________________________________________________________________*/
+ .heart-button {
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: .125rem;
+    text-align: center;
+} 
+ 
+ .heart-button__icon {
+     font-size: 25px;
+ }
+
+ .heart-button:hover .fa-regular {
+     display: none;
+ }
+
+ .heart-button:hover .fa-solid {
+     display: inline-block;
+     color: #9256dc;
+ }
+
+ .fa-solid {
+     display: none;
+ }
+

@@ -1,0 +1,27 @@
+/*_________________________________________________________________________*/
+/****** loader ***********/
+/*_________________________________________________________________________*/
+
+ .loader {
+     position: fixed;
+     inset: 0;
+     z-index: 50;
+     display: grid;
+     place-items: center;
+     background-color: rgba(255, 255, 255, 0.94);
+     animation: fade-out 0.1s cubic-bezier(0.11, 0, 0.5, 0) 3s forwards;
+ }
+
+ .loader__wrapper {
+     perspective: 120px;
+     animation: zoom-in 0.1s cubic-bezier(0.5, 1, 0.89, 1) backwards, 
+     zoom-in 0.1s 2.9s cubic-bezier(0.11, 0, 0.5, 0) reverse forwards;
+ }
+
+ .loader__spinner {
+     width: 3.5rem;
+     height: 3.5rem;
+     border-radius: 50%;
+     background: linear-gradient(175deg, $colors-secondary, $colors-primary);
+     animation: spinner 2.8s 0.1s cubic-bezier(0.45, 0, 0.55, 1);
+ }

@@ -1,0 +1,55 @@
+/*_________________________________________________________________________*/
+/****** Header ***********/
+/*_________________________________________________________________________*/
+
+.header__brand {
+    padding-inline: calc((100vw - min(90vw, 75rem))/2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: .75rem;
+    box-shadow: 0px 1px 1px rgba(102, 102, 102, 0.075), 
+                0px 2px 2px rgba(102, 102, 102, 0.075), 
+                0px 4px 4px rgba(102, 102, 102, 0.075);
+}
+ .header__button {
+     width: 1.25em;
+     height: 1.25em;
+     border-radius: 0.125rem;
+     text-align: center;
+ } 
+.header__button {
+    position: absolute;
+    top: 50%;
+    left: calc((100vw - min(90vw, 75rem))/2);
+    color: #363636;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+}
+ .header__logo {
+    width: 163px;
+    max-width: 375px;
+    height: auto;
+} 
+
+/* .header__logo {
+    font-family: "Shrikhand";
+    font-size: 2rem;
+    font-weight: 400;
+}  I didn't use text instead I used svg and png images */ 
+
+.header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+    background-color: #ededed;
+    color: #363636;
+    font-weight: 500;
+}
+
+.header__search-input {
+    width: 8em;
+    padding-block: 1.125rem;
+}
