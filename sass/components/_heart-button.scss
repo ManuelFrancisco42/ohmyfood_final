@@ -1,15 +1,22 @@
 /*_________________________________________________________________________*/
 /****** heart button ***********/
 /*_________________________________________________________________________*/
- .heart-button {
-    width: 1.25em;
-    height: 1.25em;
+.heart-button {
+    width: 4.25em;
+    height: 4.25em;
     border-radius: .125rem;
     text-align: center;
-} 
+    background: -webkit-gradient(linear, left top, left bottom, from $colors-primary, to $colors-secondary);
+    background: -webkit-linear-gradient(top, $colors-primary, $colors-secondary);
+    background: linear-gradient(to bottom, $colors-primary, $colors-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
  
  .heart-button__icon {
-     font-size: 25px;
+     font-size: 30px;
  }
 
  .heart-button:hover .fa-regular {
@@ -18,10 +25,11 @@
 
  .heart-button:hover .fa-solid {
      display: inline-block;
-     color: #9256dc;
+     color: $colors-primary;
  }
 
  .fa-solid {
      display: none;
  }
 
+ 

@@ -19,7 +19,8 @@
   from {
     opacity: 0;
     visibility: hidden;
-    transform: scale(0.5); } }
+    transform: scale(0.5);
+    transform: scale(1); } }
 
 @keyframes fade-out {
   to {
@@ -312,13 +313,20 @@ body {
 /****** heart button ***********/
 /*_________________________________________________________________________*/
 .heart-button {
-  width: 1.25em;
-  height: 1.25em;
+  width: 4.25em;
+  height: 4.25em;
   border-radius: .125rem;
-  text-align: center; }
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from #9256dc, to #ff7ad9);
+  background: -webkit-linear-gradient(top, #9256dc, #ff7ad9);
+  background: linear-gradient(to bottom, #9256dc, #ff7ad9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; }
 
 .heart-button__icon {
-  font-size: 25px; }
+  font-size: 30px; }
 
 .heart-button:hover .fa-regular {
   display: none; }
@@ -346,11 +354,20 @@ body {
   perspective: 120px;
   animation: zoom-in 0.1s cubic-bezier(0.5, 1, 0.89, 1) backwards, zoom-in 0.1s 2.9s cubic-bezier(0.11, 0, 0.5, 0) reverse forwards; }
 
+.loader_page {
+  font-size: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from #9256dc, to #ff7ad9);
+  background: -webkit-linear-gradient(top, #9256dc, #ff7ad9);
+  background: linear-gradient(to bottom, #9256dc, #ff7ad9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; }
+
 .loader__spinner {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  background: linear-gradient(175deg, #ff7ad9, #9256dc);
   animation: spinner 2.8s 0.1s cubic-bezier(0.45, 0, 0.55, 1); }
 
 /*_________________________________________________________________________*/
